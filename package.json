@@ -1,0 +1,44 @@
+{
+  "name": "bsale-cli",
+  "version": "0.0.1",
+  "description": "Bsale cli for fast query data through terminal",
+  "main": "./dist/cli.js",
+  "scripts": {
+    "build-metadata": "node scripts/generate-metadata.cjs",
+    "build": "npm run build-metadata && tsc"
+  },
+  "bin": {
+    "bsale-cli": "./dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johuder33/bsale-cli.git"
+  },
+  "keywords": [
+    "bsale",
+    "cli",
+    "restful",
+    "api",
+    "chile",
+    "ecommerce"
+  ],
+  "author": "Juorder Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johuder33/bsale-cli/issues"
+  },
+  "homepage": "https://github.com/johuder33/bsale-cli#readme",
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "commander": "^12.1.0",
+    "got": "^14.4.2"
+  },
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.6",
+    "@types/got": "^9.6.12",
+    "@types/node": "^22.5.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "type": "module"
+}
